@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "invisibleclient",
+	"version": "${version}",
+	"name": "InvisibleClient",
+	"description": "A Minecraft 1.20 Utility Mod for Anarchy Servers (tailored for 2b2t).",
+	"authors": [
+		"TrevoltIV"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/invisibleclient/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.trevolt.invisibleclient.InvisibleClient"
+		],
+		"fabric-datagen": [
+			"net.trevolt.invisibleclient.InvisibleClientDataGenerator"
+		]
+	},
+	"mixins": [
+		"invisibleclient.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
